@@ -1,0 +1,22 @@
+﻿@using Softwire.WebUI.Infrastructure.Helpers;
+<li class="nav-item">
+    @Html.NavigationLink("Blog Posts", "Read", "BlogPost")
+</li>
+<li class="nav-item">
+    @Html.NavigationLink("Quote Requests", "Index", "QuoteRequest")
+</li>
+
+<li class="nav-item">
+    @Html.NavigationLink("Support Requests", "Index", "SupportRequest")
+</li>
+
+<li class="nav-item">
+    <a class="nav-link">Account <i data-feather="chevron-down"></i></a>
+    <ul class="dropdown_menu">
+
+        @*<li class="nav-item"> @Html.RouteLink("User Profile", "Users-UserEdit", routeValues: null, htmlAttributes: new { @class = "nav-link" })</li>*@
+        <li class="nav-item"> @Html.ActionLink("Admins", "Index", "Users", null, new { @class = "nav-link" })</li>
+         <li class="nav-item"> @Html.ActionLink("Change password", "ChangePwd", "Account", null, new { @class = "nav-link" })</li>
+
+    </ul>
+</li>

@@ -1,0 +1,49 @@
+﻿@*@Scripts.Render("~/bundles/jquery?v=1.0")
+@Html.Partial("Forms/_JQueryVal")
+@Scripts.Render("~/bundles/bootstrap?v=1.0")
+@Scripts.Render("~/bundles/sitescripts?v=1.0")*@
+
+
+@Html.Partial("Forms/_JQueryVal")
+@Scripts.Render("~/bundles/sitescripts")
+
+<!-- Map API JS FILES -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCamjh0yNXf7r7pv4PaOOW5xv8H7HaXQ8I&amp;callback=initMap"></script>
+
+<script>
+			jQuery(document).on('ready', function() {
+				$('.odometer').appear(function(e) {
+					var odo = $(".odometer");
+					odo.each(function() {
+						var countNumber = $(this).attr("data-count");
+						$(this).html(countNumber);
+					});
+				});
+			});
+</script>
+
+<script>
+	$(document).ready(function() {
+
+	    $(".blog-post-content").shorten();
+
+	    //Override function
+
+	    //$(".blog-post-content").shorten({
+	    //    "showChars": 200
+	    //});
+
+
+	    //$(".blog-post-content").shorten({
+	    //    "showChars": 150,
+	    //    "moreText": "See More",
+	    //});
+
+	    //$(".blog-post-content").shorten({
+	    //    "showChars": 50,
+	    //    "moreText": "See More",
+	    //    "lessText": "Less",
+	    //});
+
+	});
+</script>

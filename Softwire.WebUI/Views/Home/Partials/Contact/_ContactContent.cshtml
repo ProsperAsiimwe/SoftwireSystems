@@ -1,0 +1,61 @@
+﻿ <!-- Start Page Title -->
+<div class="page-title-area">
+    <div class="d-table">
+        <div class="d-table-cell">
+            <div class="container">
+                <h2>Contact Us</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="shape1"><img src="~/Content/assets/img/shape1.png" alt="shape"></div>
+    <div class="shape2 rotateme"><img src="~/Content/assets/img/shape2.svg" alt="shape"></div>
+    <div class="shape3"><img src="~/Content/assets/img/shape3.svg" alt="shape"></div>
+    <div class="shape4"><img src="~/Content/assets/img/shape4.svg" alt="shape"></div>
+    <div class="shape5"><img src="~/Content/assets/img/shape5.png" alt="shape"></div>
+    <div class="shape6 rotateme"><img src="~/Content/assets/img/shape4.svg" alt="shape"></div>
+    <div class="shape7"><img src="~/Content/assets/img/shape4.svg" alt="shape"></div>
+    <div class="shape8 rotateme"><img src="~/Content/assets/img/shape2.svg" alt="shape"></div>
+</div>
+<!-- End Page Title -->
+
+ <!-- Start Contact Info Area -->
+<section class="contact-info-area ptb-80">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="contact-info-box">
+                    <div class="icon">
+                        <i data-feather="mail"></i>
+                    </div>
+                    <h3>Mail Here</h3>
+                    <p>@Html.EmailLink(Settings.COMPANY_EMAIL)</p>                   
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="contact-info-box">
+                    <div class="icon">
+                        <i data-feather="map-pin"></i>
+                    </div>
+                    <h3>Visit Here</h3>
+                    <p>@Settings.COMPANY_ADDRESS</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                <div class="contact-info-box">
+                    <div class="icon">
+                        <i data-feather="phone"></i>
+                    </div>
+                    <h3>Call Here</h3>
+                    <p>@Settings.COMPANY_PHONE</p>                  
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Contact Info Area -->
+
+<!-- Map -->
+<div id="map"></div>
